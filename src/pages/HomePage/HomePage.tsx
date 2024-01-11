@@ -1,5 +1,11 @@
+import { PageContainer } from 'components';
+import style from './HomePage.module.css';
+
 export function HomePage() {
-    return (
-        <h1>EXAMPLE</h1>
-    );
-  }
+  return (
+    <PageContainer>
+      <h1 className="test">EXAMPLE</h1>
+      <h2>eeee</h2>
+    </PageContainer>
+  );
+}
