@@ -2,7 +2,6 @@ import './global.css';
 import { BrowserRouter } from 'react-router-dom';
 import { Router } from './router/index';
 
-
 function App() {
   return (
     <BrowserRouter>
@@ -12,4 +11,3 @@ function App() {
 }
 
 export default App;
-

@@ -1,11 +1,16 @@
 import { PageContainer } from 'components';
-import style from './HomePage.module.css';
+import styles from './HomePage.module.css';
+import Header from 'components/Header/Header';
 
 export function HomePage() {
   return (
     <PageContainer>
-      <h1 className="test">EXAMPLE</h1>
+      <Header />
       <h2>eeee</h2>
     </PageContainer>
+    // <div className={styles.test}>
+    //   <p>test</p>
+    //   <p>tutu</p>
+    // </div>
   );
 }
