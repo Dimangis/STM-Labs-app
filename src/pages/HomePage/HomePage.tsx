@@ -6,7 +6,6 @@ export function HomePage() {
   return (
     <PageContainer>
       <Header />
-      <h2>eeee</h2>
     </PageContainer>
     // <div className={styles.test}>
     //   <p>test</p>

@@ -1,0 +1,17 @@
+.a {
+    color: blue;
+    text-decoration: none; /* no underline */
+  }
+
+  .li{
+    list-style-type: none;
+  }
+
+  .list{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .list li:nth-last-child(n+2) {
+    margin-right: 15px;
+  }
