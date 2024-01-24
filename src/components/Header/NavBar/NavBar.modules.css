@@ -1,5 +1,17 @@
+@font-face {
+  font-family: 'WorkSans';
+  src: url('../../../../public/fonts/WorkSans-Regular.woff2') format('woff2'),
+    url('../../../../public/fonts/WorkSans-Regular.woff') format('woff'),
+    url('../../../../public/fonts/WorkSans-Regular.ttf') format('ttf');
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .a {
-    color: blue;
+  font-family: 'WorkSans';
+  font-weight: 400;
+    color: #3B3C4A;
     text-decoration: none; /* no underline */
   }
 
@@ -13,5 +25,5 @@
   }
 
   .list li:nth-last-child(n+2) {
-    margin-right: 15px;
+    margin-right: 25px;
   }

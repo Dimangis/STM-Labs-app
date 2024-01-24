@@ -93,7 +93,7 @@ module.exports = env => {
           ],
         },
         {
-          test: /\.(png|jpe?g|gif|webp|ico)$/i,
+          test: /\.(png|jpe?g|gif|webp|ico|avif)$/i,
           type: 'asset/resource',
         },
         {
@@ -101,7 +101,12 @@ module.exports = env => {
           use: [
             {
               loader: '@svgr/webpack',
-              options: {},
+              options: {
+                icon: true,
+                svgoConfig: {
+                  plugins: [{ name: 'convertColors', params: { currentColor: true } }],
+                },
+              },
             },
           ],
         },

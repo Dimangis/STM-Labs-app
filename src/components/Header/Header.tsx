@@ -9,7 +9,7 @@ export default function Header() {
     <header className={styles.header}>
       <Logo />
       <NavBar />
-      <div>
+      <div className={styles.rightblock}>
         <Searcher />
         <ThemeChanger />
       </div>
