@@ -1,13 +1,13 @@
 import React from 'react';
 
 interface PictureComponentProps {
-  pngPath1x: string;
-  pngPath2x: string;
-  webpPath1x: string;
-  webpPath2x: string;
+  pngPath1x?: string;
+  pngPath2x?: string;
+  webpPath1x?: string;
+  webpPath2x?: string;
   avifPath1x?: string;
   avifPath2x?: string;
-  jpgPath1x?: string;
+  jpgPath1x: string;
   jpgPath2x?: string;
   altText: string;
 }

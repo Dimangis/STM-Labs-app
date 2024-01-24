@@ -1,17 +1,24 @@
 .titleBlock {
     background-color: white;
+    max-width: 600px;
     border-radius: 12px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
-  .titleHeader {
-    background-color: #3498db;
+  .titleTheme {
+    display: inline-block;
+    background-color: #4B6BFB;
+    max-width: 97px;
     color: white;
     padding: 10px;
     border-radius: 12px;
     margin-bottom: 15px;
   }
+  
+.ThemeText{
+margin: auto;
+}
   
   .titleHeader h1 {
     margin: 0;
@@ -23,8 +30,8 @@
   }
   
   .avatar img {
-    width: 50px;
-    height: 50px;
+    width: 36px;
+    height: 36px;
     border-radius: 50%;
     margin-right: 15px;
   }
@@ -43,7 +50,3 @@
     color: #888;
   }
   
-  .smallTitle {
-    margin-top: 15px;
-    color: #3498db;
-  }
