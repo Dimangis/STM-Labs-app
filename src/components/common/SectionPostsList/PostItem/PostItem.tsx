@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './PostItem.module.css';
+import PictureComponent from 'components/common/PictureComponent/PictureComponent';
 
 interface PostItemProps {
   imageUrl: string;
@@ -10,7 +11,7 @@ interface PostItemProps {
 const PostItem: React.FC<PostItemProps> = ({ imageUrl, title, description }) => {
   return (
     <div className={styles.postItem}>
-      <img src={imageUrl} alt="Post" className={styles.postImage} />
+      <PictureComponent jpgPath1x={imageUrl} altText={title} />
       <h4 className={styles.postTitle}>{title}</h4>
       <p className={styles.postDescription}>{description}</p>
     </div>
