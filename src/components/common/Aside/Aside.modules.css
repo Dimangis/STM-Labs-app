@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'WorkSans';
+    src: url('../../../../public/fonts/WorkSans-Regular.woff2') format('woff2'),
+      url('../../../../public/fonts/WorkSans-Regular.woff') format('woff'),
+      url('../../../../public/fonts/WorkSans-Regular.ttf') format('ttf');
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'WorkSans';
+    src: url('../../../../public/fonts/WorkSans-SemiBold.woff2') format('woff2'),
+      url('../../../../public/fonts/WorkSans-SemiBold.woff') format('woff'),
+      url('../../../../public/fonts/WorkSans-SemiBold.ttf') format('ttf');
+    font-display: swap;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+.asideContainer {
+    width: 750px;
+    height: 100px;
+    background-color: #E8E8EA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    margin: 10px;
+    margin-top: 120px;
+  }
+  
+.text{
+    font-family: 'WorkSans';
+    font-weight: 400;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    color: #696A75;
+}
+
+  .h4 {
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .t1{
+    line-height: 24px;
+    font-size: 20px;
+  }
+
+  .t2{
+    line-height: 26px;
+    font-size: 18px;
+  }

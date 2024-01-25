@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './PictureComponent.modules.css';
 
 interface PictureComponentProps {
   pngPath1x?: string;
@@ -9,6 +10,7 @@ interface PictureComponentProps {
   avifPath2x?: string;
   jpgPath1x: string;
   jpgPath2x?: string;
+  borderRadius?: string;
   altText: string;
 }
 
@@ -21,8 +23,13 @@ const PictureComponent: React.FC<PictureComponentProps> = ({
   avifPath2x,
   jpgPath1x,
   jpgPath2x,
+  borderRadius,
   altText,
 }) => {
+  const pictureContainer = {
+    borderRadius: borderRadius || '6px', // Используем значение из пропс или значение по умолчанию
+  };
+
   return (
     <picture>
       <source srcSet={avifPath2x} type="image/avif" media="(min-resolution: 2dppx)" />
@@ -32,7 +39,7 @@ const PictureComponent: React.FC<PictureComponentProps> = ({
       <source srcSet={pngPath2x} type="image/png" media="(min-resolution: 2dppx)" />
       <source srcSet={pngPath1x} type="image/png" />
       <source srcSet={jpgPath2x} type="image/jpg" media="(min-resolution: 2dppx)" />
-      <img src={jpgPath1x} alt={altText} />
+      <img src={jpgPath1x} alt={altText} style={pictureContainer} className={styles.image} />
     </picture>
   );
 };

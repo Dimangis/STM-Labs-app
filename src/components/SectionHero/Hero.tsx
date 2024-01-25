@@ -13,7 +13,7 @@ import jpg2x from '../../../public/img/Heroimg/Hero@2x.jpg';
 
 export default function Hero() {
   return (
-    <section>
+    <section className={styles.heroContainer}>
       <PictureComponent
         pngPath1x={png1x}
         pngPath2x={png2x}
@@ -23,6 +23,7 @@ export default function Hero() {
         avifPath2x={avif2x}
         jpgPath1x={jpg1x}
         jpgPath2x={jpg2x}
+        borderRadius="12px"
         altText="HeroImg"
       />
       <TitleBlock />

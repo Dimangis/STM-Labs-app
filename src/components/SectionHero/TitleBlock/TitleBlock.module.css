@@ -1,4 +1,17 @@
+@font-face {
+  font-family: 'WorkSans';
+  src: url('../../../../public/fonts/WorkSans-SemiBold.woff2') format('woff2'),
+    url('../../../../public/fonts/WorkSans-SemiBold.woff') format('woff'),
+    url('../../../../public/fonts/WorkSans-SemiBold.ttf') format('ttf');
+  font-display: swap;
+  font-weight: 600;
+  font-style: normal;
+}
+
 .titleBlock {
+  position: absolute;
+  left: 5%;
+  top: 55%;
     background-color: white;
     max-width: 600px;
     border-radius: 12px;
@@ -6,18 +19,25 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
+.blockContent{
+  margin: 20px 30px;
+}
+
   .titleTheme {
     display: inline-block;
     background-color: #4B6BFB;
     max-width: 97px;
     color: white;
-    padding: 10px;
+    padding: 4px 10px;
     border-radius: 12px;
-    margin-bottom: 15px;
   }
   
 .ThemeText{
-margin: auto;
+  font-family: 'WorkSans';
+  font-weight: 500;
+  font-size: 14px;
+  margin: auto;
+  line-height: 20px;
 }
   
   .titleHeader h1 {
@@ -48,5 +68,11 @@ margin: auto;
   
   .date {
     color: #888;
+  }
+
+  .h1{
+    font-family: 'WorkSans';
+    font-weight: 600;
+    line-height: 40px;
   }
   
