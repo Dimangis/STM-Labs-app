@@ -1,5 +1,25 @@
+@font-face {
+  font-family: 'WorkSans';
+  src: url('../../../public/fonts/WorkSans-Regular.woff2') format('woff2'),
+    url('../../../public/fonts/WorkSans-Regular.woff') format('woff'),
+    url('../../../public/fonts/WorkSans-Regular.ttf') format('ttf');
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'WorkSans';
+  src: url('../../../public/fonts/WorkSans-SemiBold.woff2') format('woff2'),
+    url('../../../public/fonts/WorkSans-SemiBold.woff') format('woff'),
+    url('../../../public/fonts/WorkSans-SemiBold.ttf') format('ttf');
+  font-display: swap;
+  font-weight: 600;
+  font-style: normal;
+}
+
 .footerContainer {
-    background-color: #E8E8EA; /* серый фон */
+    background-color: #F6F6F7; /* серый фон */
     padding: 20px; /* или другие значения внутренних отступов по вашему усмотрению */
     height: 400px;
   }
@@ -7,4 +27,48 @@
   .footerContent {
     max-width: 1200px; /* или другие значения максимальной ширины по вашему усмотрению */
     margin: 0 auto; /* центрирование блока по горизонтали */
+    margin-top: 30px;
   }
+  
+  .footerTopContent {
+    display: flex;    
+    padding-bottom: 45px;
+    justify-content: space-between;
+    border-bottom: 2px solid #E8E8EA;
+  }
+  
+  .title{
+    font-family: 'WorkSans';
+    margin: 0;
+    margin-bottom: 25px;
+  }
+
+  .text {
+    font-family: 'WorkSans';
+    margin: 0;
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 400;
+      color: #3B3C4A;
+      text-decoration: none; /* no underline */
+    }
+  
+    .textDecoration{
+      color: #696A75;
+    }
+
+
+
+    .list{
+      list-style-type: none;
+      padding: 0;
+    }
+  
+    /* .list{
+      display: flex;
+      flex-direction: column;
+    } */
+  
+    .list li:nth-last-child(n+2) {
+      margin-bottom: 10px;
+    }

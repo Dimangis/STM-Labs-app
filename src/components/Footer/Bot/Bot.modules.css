@@ -1,0 +1,13 @@
+.botContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.policyBlock{
+    display: block;
+}
+
+.policyBlock a:nth-last-child(n+2) {
+    margin-right: 20px;
+  }

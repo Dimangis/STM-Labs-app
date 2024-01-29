@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'WorkSans';
+    src: url('../../../../public/fonts/WorkSans-SemiBold.woff2') format('woff2'),
+      url('../../../../public/fonts/WorkSans-SemiBold.woff') format('woff'),
+      url('../../../../public/fonts/WorkSans-SemiBold.ttf') format('ttf');
+    font-display: swap;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+.aboutContainer{
+    display: flex;
+    flex-direction: column;
+    max-width: 290px;
+}
+
+.description{
+    margin-bottom: 20px;
+}
+
+.boldText{
+    font-family: 'WorkSans';
+    font-weight: 600;
+    color: black;
+  }

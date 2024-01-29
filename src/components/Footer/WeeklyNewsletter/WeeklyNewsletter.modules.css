@@ -1,0 +1,49 @@
+.newsletterForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+    background-color: #fff;
+    padding: 30px; 
+    min-width: 340px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px; 
+  }
+  
+  .formTitle {
+    color: #333; 
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  
+  .formDescription {
+    color: #555; 
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  
+  .emailInput {
+    width: 100%; 
+    margin-bottom: 10px; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box;
+  }
+  
+  .subscribeButton {
+    display: block;
+    background-color: #4B6BFB; 
+    width: 100%;
+    color: #fff;
+    padding: 10px 15px; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+  }
+  
+  .subscribeButton:hover {
+    background-color: #0056b3; 
+  }
+
+  
