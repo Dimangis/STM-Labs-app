@@ -11,16 +11,20 @@ interface PostItemProps {
   // Это делает код более гибким, и если вы измените тип url в PostData, то изменения также будут автоматически отражены в PostItem.tsx.
   title: string;
   description: string;
+  userInfo: PostData['userInfo'];
 }
 
-const PostItem: React.FC<PostItemProps> = ({ imageUrl, title, description }) => {
-  const { jpg1x, jpg2x } = imageUrl;
+const PostItem: React.FC<PostItemProps> = ({ imageUrl, title, description, userInfo }) => {
+  const { jpg1x, jpg2x, png1x, png2x } = imageUrl;
+  const { avatarSrc, userName, date } = userInfo;
   return (
     <div className={styles.postItem}>
-      <PictureComponent jpgPath1x={jpg1x} jpgPath2x={jpg2x} altText={title} />
-      <h4 className={styles.postTitle}>{title}</h4>
+      <PictureComponent jpgPath1x={jpg1x} jpgPath2x={jpg2x} pngPath1x={png1x} pngPath2x={png2x} altText={title} />
+      <div className={styles.postTitleBox}>
+        <h4 className={styles.postTitle}>{title}</h4>
+      </div>
       <p className={styles.postDescription}>{description}</p>
-      <UserInfo avatarSrc={jpgPath} userName="Jason Francisco" date="August 20, 2022" />
+      <UserInfo avatarSrc={avatarSrc} userName={userName} date={date} />
     </div>
   );
 };

@@ -5,13 +5,16 @@ interface AsideProps {
   title?: string;
   text1?: string;
   text2?: string;
+  marginTop?: string;
 }
 
-const Aside: React.FC<AsideProps> = ({ title, text1, text2 }) => {
+const Aside: React.FC<AsideProps> = ({ title, text1, text2, marginTop }) => {
   const hasContent = title || text1 || text2;
-
+  const asideContainer = {
+    marginTop: marginTop || '120px', // Используем значение из пропс или значение по умолчанию
+  };
   return (
-    <div className={styles.asideContainer}>
+    <div className={styles.asideContainer} style={asideContainer}>
       {hasContent ? (
         <>
           {title && <h4 className={`${styles.text} ${styles.h4}`}>{title}</h4>}

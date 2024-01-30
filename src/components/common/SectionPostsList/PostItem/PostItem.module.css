@@ -1,8 +1,28 @@
+@font-face {
+  font-family: 'WorkSans';
+  src: url('../../../../../public/fonts/WorkSans-SemiBold.woff2') format('woff2'),
+    url('../../../../../public/fonts/WorkSans-SemiBold.woff') format('woff'),
+    url('../../../../../public/fonts/WorkSans-SemiBold.ttf') format('ttf');
+  font-display: swap;
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'WorkSans';
+  src: url('../../../../../public/fonts/WorkSans-Medium.woff2') format('woff2'),
+    url('../../../../../public/fonts/WorkSans-Medium.woff') format('woff'),
+    url('../../../../../public/fonts/WorkSans-Medium.ttf') format('ttf');
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+}
 
 .postItem {
-    background-color: #f0f0f0;
-    padding: 20px;
-    border-radius: 8px;
+    background-color: #FFFFFF;
+    padding: 16px;
+    border-radius: 12px;
+    border: 1px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
@@ -13,13 +33,27 @@
     margin-bottom: 10px;
   }
   
+  .postTitleBox{
+    display: inline-block;
+    background-color: #4B6BFB0D;
+    margin: 0;
+    margin-top: 18px;
+    padding: 4px 10px 4px 10px;
+    border-radius: 6px;
+  }
+
   .postTitle {
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 8px;
+    font-family: 'WorkSans';
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 500;
+margin: 0;
+    color: #4B6BFB;
   }
   
   .postDescription {
-    font-size: 14px;
-    color: #555;
+    font-family: 'WorkSans';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
   }

@@ -6,6 +6,7 @@ export interface PostData {
   postName: string;
   title: string;
   description: string;
+  userInfo: { avatarSrc: string; userName: string; date: string };
 }
 
 export const postsDataArray: PostData[] = [
@@ -17,8 +18,13 @@ export const postsDataArray: PostData[] = [
       png2x: images.Sea2xpng,
     },
     postName: 'Sea',
-    title: 'Post 1',
+    title: 'Technology',
     description: 'The Impact of Technology on the Workplace: How Technology is Changing',
+    userInfo: {
+      avatarSrc: images.Avatar1,
+      userName: 'Jason Francisco',
+      date: 'August 20, 2022',
+    },
   },
   {
     url: {
@@ -28,8 +34,13 @@ export const postsDataArray: PostData[] = [
       png2x: images.Venice2xpng,
     },
     postName: 'post2',
-    title: 'Post 2',
+    title: 'Technology',
     description: 'The Impact of Technology on the Workplace: How Technology is Changing',
+    userInfo: {
+      avatarSrc: images.Avatar2,
+      userName: 'Ernie Smith',
+      date: 'August 20, 2022',
+    },
   },
   {
     url: {
@@ -39,8 +50,13 @@ export const postsDataArray: PostData[] = [
       png2x: images.Girl2xpng,
     },
     postName: 'post3',
-    title: 'Post 3',
+    title: 'Technology',
     description: 'The Impact of Technology on the Workplace: How Technology is Changing',
+    userInfo: {
+      avatarSrc: images.Avatar3,
+      userName: 'Tracey Wilson',
+      date: 'August 20, 2022',
+    },
   },
   {
     url: {
@@ -50,8 +66,13 @@ export const postsDataArray: PostData[] = [
       png2x: images.House2xpng,
     },
     postName: 'Sea',
-    title: 'Post 1',
+    title: 'Technology',
     description: 'The Impact of Technology on the Workplace: How Technology is Changing',
+    userInfo: {
+      avatarSrc: images.Avatar4,
+      userName: 'Jason Francisco',
+      date: 'August 20, 2022',
+    },
   },
   {
     url: {
@@ -61,8 +82,13 @@ export const postsDataArray: PostData[] = [
       png2x: images.Stones2xpng,
     },
     postName: 'post2',
-    title: 'Post 2',
+    title: 'Technology',
     description: 'The Impact of Technology on the Workplace: How Technology is Changing',
+    userInfo: {
+      avatarSrc: images.Avatar5,
+      userName: 'Elizabeth Slavin',
+      date: 'August 20, 2022',
+    },
   },
   {
     url: {
@@ -72,8 +98,13 @@ export const postsDataArray: PostData[] = [
       png2x: images.Car2xpng,
     },
     postName: 'post3',
-    title: 'Post 3',
+    title: 'Technology',
     description: 'The Impact of Technology on the Workplace: How Technology is Changing',
+    userInfo: {
+      avatarSrc: images.Avatar1,
+      userName: 'Jason Francisco',
+      date: 'August 20, 2022',
+    },
   },
   {
     url: {
@@ -83,8 +114,13 @@ export const postsDataArray: PostData[] = [
       png2x: images.Iphone2xpng,
     },
     postName: 'Sea',
-    title: 'Post 1',
+    title: 'Technology',
     description: 'The Impact of Technology on the Workplace: How Technology is Changing',
+    userInfo: {
+      avatarSrc: images.Avatar2,
+      userName: 'Ernie Smith',
+      date: 'August 20, 2022',
+    },
   },
   {
     url: {
@@ -94,8 +130,13 @@ export const postsDataArray: PostData[] = [
       png2x: images.Island2xpng,
     },
     postName: 'post2',
-    title: 'Post 2',
+    title: 'Technology',
     description: 'The Impact of Technology on the Workplace: How Technology is Changing',
+    userInfo: {
+      avatarSrc: images.Avatar3,
+      userName: 'Tracey Wilson',
+      date: 'August 20, 2022',
+    },
   },
   {
     url: {
@@ -105,8 +146,13 @@ export const postsDataArray: PostData[] = [
       png2x: images.DualSense2xpng,
     },
     postName: 'post3',
-    title: 'Post 3',
+    title: 'Technology',
     description: 'The Impact of Technology on the Workplace: How Technology is Changing',
+    userInfo: {
+      avatarSrc: images.Avatar5,
+      userName: 'Elizabeth Slavin',
+      date: 'August 20, 2022',
+    },
   },
   // ... добавьте другие объекты по необходимости
 ];

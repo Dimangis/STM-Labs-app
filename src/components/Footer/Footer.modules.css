@@ -19,14 +19,15 @@
 }
 
 .footerContainer {
-    background-color: #F6F6F7; /* серый фон */
-    padding: 20px; /* или другие значения внутренних отступов по вашему усмотрению */
+    background-color: #F6F6F7; 
+    margin-top: 80px;
+    padding: 20px;
     height: 400px;
   }
   
   .footerContent {
-    max-width: 1200px; /* или другие значения максимальной ширины по вашему усмотрению */
-    margin: 0 auto; /* центрирование блока по горизонтали */
+    max-width: 1200px; 
+    margin: 0 auto; 
     margin-top: 30px;
   }
   
@@ -50,7 +51,7 @@
     font-size: 16px;
     font-weight: 400;
       color: #3B3C4A;
-      text-decoration: none; /* no underline */
+      text-decoration: none;
     }
   
     .textDecoration{

@@ -34,6 +34,11 @@ import DualSense1xjpg from '../../../../public/img/Posts/Rectangle 38DualSense@1
 import DualSense2xjpg from '../../../../public/img/Posts/Rectangle 38DualSense@2x.jpg';
 import DualSense1xpng from '../../../../public/img/Posts/Rectangle 38DualSense@1x.png';
 import DualSense2xpng from '../../../../public/img/Posts/Rectangle 38DualSense@2x.png';
+import Avatar1 from '../../../../public/img/Avatars/JF.jpg';
+import Avatar2 from '../../../../public/img/Avatars/ES.jpg';
+import Avatar3 from '../../../../public/img/Avatars/ES2.jpg';
+import Avatar4 from '../../../../public/img/Avatars/ES3.jpg';
+import Avatar5 from '../../../../public/img/Avatars/TW.jpg';
 
 export const images = {
   Sea1xjpg,
@@ -72,4 +77,9 @@ export const images = {
   DualSense2xjpg,
   DualSense1xpng,
   DualSense2xpng,
+  Avatar1,
+  Avatar2,
+  Avatar3,
+  Avatar4,
+  Avatar5,
 };

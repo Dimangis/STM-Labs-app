@@ -14,7 +14,7 @@ export function HomePage() {
         <Hero />
         <Aside />
         <PostsList postsData={postsDataArray} />
-        <Aside />
+        <Aside marginTop="60px" />
       </PageContainer>
       <Footer />
     </>
