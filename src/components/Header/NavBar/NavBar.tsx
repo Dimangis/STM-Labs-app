@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styles from './NavBar.modules.css';
 
 export function NavBar() {
@@ -5,29 +6,29 @@ export function NavBar() {
     <nav>
       <ul className={styles.list}>
         <li className={styles.li}>
-          <a href="" className={styles.a}>
+          <Link to="/" className={styles.a}>
             Home
-          </a>
+          </Link>
         </li>
         <li className={styles.li}>
-          <a href="" className={styles.a}>
+          <Link to="/blog" className={styles.a}>
             Blog
-          </a>
+          </Link>
         </li>
         <li className={styles.li}>
-          <a href="" className={styles.a}>
+          <Link to="/singlepost" className={styles.a}>
             Single Post
-          </a>
+          </Link>
         </li>
         <li className={styles.li}>
-          <a href="" className={styles.a}>
+          <Link to="/author" className={styles.a}>
             Pages
-          </a>
+          </Link>
         </li>
         <li className={styles.li}>
-          <a href="" className={styles.a}>
+          <Link to="/" className={styles.a}>
             Contact
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>

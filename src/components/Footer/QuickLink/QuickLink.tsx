@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styles from '../Footer.modules.css';
 
 export default function QuickLink() {
@@ -6,34 +7,34 @@ export default function QuickLink() {
       <h3 className={styles.title}>Quick Link</h3>
       <ul className={styles.list}>
         <li>
-          <a href="" className={styles.text}>
+          <Link to="/" className={styles.text}>
             Home
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="" className={styles.text}>
+          <Link to="/blog" className={styles.text}>
             About
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="" className={styles.text}>
+          <Link to="/singlepost" className={styles.text}>
             Blog
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="" className={styles.text}>
+          <Link to="/" className={styles.text}>
             Archived
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="" className={styles.text}>
+          <Link to="/author" className={styles.text}>
             Author
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="" className={styles.text}>
+          <Link to="/" className={styles.text}>
             Contact
-          </a>
+          </Link>
         </li>
       </ul>
     </div>
