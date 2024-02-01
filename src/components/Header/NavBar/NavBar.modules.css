@@ -29,6 +29,6 @@
     flex-direction: row;
   }
 
-  .list li:nth-last-child(n+2) {
+  .list >:nth-last-child(n+2) {
     margin-right: 25px;
   }
