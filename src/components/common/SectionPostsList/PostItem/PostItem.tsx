@@ -4,6 +4,7 @@ import PictureComponent from 'components/common/PictureComponent/PictureComponen
 import { PostData } from '../PostData';
 import UserInfo from 'components/common/UserInfo/UserInfo';
 import jpgPath from '../../../../../public/img/Avatars/JF.jpg';
+import { HeaderText } from 'components/common/Text/TextObject';
 
 interface PostItemProps {
   imageUrl: PostData['url']; //Благодаря такому синтаксису я передаю точную часть интерфейса PostData, а точнее url
@@ -23,7 +24,8 @@ const PostItem: React.FC<PostItemProps> = ({ imageUrl, title, description, userI
       <div className={styles.postTitleBox}>
         <h4 className={styles.postTitle}>{title}</h4>
       </div>
-      <p className={styles.postDescription}>{description}</p>
+      <HeaderText content={description} fontSize="24px" lineHeight="28px" margin="20px 0" />
+      {/* <p className={styles.postDescription}>{description}</p> */}
       <UserInfo avatarSrc={avatarSrc} userName={userName} date={date} />
     </div>
   );
