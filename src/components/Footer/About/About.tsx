@@ -1,10 +1,11 @@
 import styles from './About.modules.css';
 import style from '../Footer.modules.css';
+import { HeaderText } from 'components/common/Text/TextObject';
 
 export default function About() {
   return (
     <div className={styles.aboutContainer}>
-      <h3 className={style.title}>About</h3>
+      <HeaderText content="About" fontSize="18px" lineHeight="28px" />
       <p className={`${style.text} ${style.textDecoration} ${styles.description}`}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
         magna aliqua. Ut enim ad minim veniam

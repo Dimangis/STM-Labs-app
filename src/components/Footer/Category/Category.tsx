@@ -1,10 +1,10 @@
-import { LinkText } from 'components/common/Text/TextObject';
+import { HeaderText, LinkText } from 'components/common/Text/TextObject';
 import styles from '../Footer.modules.css';
 
 export default function Category() {
   return (
     <div>
-      <h3 className={styles.title}>Category</h3>
+      <HeaderText content="Category" fontSize="18px" lineHeight="28px" />
       <ul className={styles.list}>
         <li>
           <a href="">

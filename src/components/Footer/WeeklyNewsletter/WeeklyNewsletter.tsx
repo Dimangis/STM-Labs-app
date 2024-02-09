@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './WeeklyNewsletter.modules.css';
 import style from '../Footer.modules.css';
+import { HeaderText, LinkText } from 'components/common/Text/TextObject';
 
 const WeeklyNewsletter: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
@@ -10,10 +11,8 @@ const WeeklyNewsletter: React.FC = () => {
 
   return (
     <form className={styles.newsletterForm} onSubmit={handleSubmit}>
-      <h3 className={`${styles.formTitle} ${style.title}`}>Weekly Newsletter</h3>
-      <p className={`${styles.formDescription} ${style.textDecoration} ${style.text}`}>
-        Get blog articles and offers via email
-      </p>
+      <HeaderText content="Weekly Newsletter" fontSize="20px" lineHeight="24px" />
+      <LinkText content="Get blog articles and offers via email" />
       <input type="email" placeholder="Your Email" className={styles.emailInput} required />
       <button type="submit" className={styles.subscribeButton}>
         Subscribe

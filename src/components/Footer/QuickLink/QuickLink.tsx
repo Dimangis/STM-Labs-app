@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom';
 import styles from '../Footer.modules.css';
 import style from './QuickLink.modules.css';
-import { LinkText } from 'components/common/Text/TextObject';
+import { HeaderText, LinkText } from 'components/common/Text/TextObject';
 
 export default function QuickLink() {
   return (
     <div>
-      <h3 className={styles.title}>Quick Link</h3>
+      <HeaderText content="Quick Link" fontSize="18px" lineHeight="28px" />
       <ul className={styles.list}>
         <li>
           <Link to="/" className={`${style.link}`}>
