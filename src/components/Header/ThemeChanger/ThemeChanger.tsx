@@ -1,9 +1,24 @@
 import styles from './ThemeChanger.module.css';
+import { useSelector, useDispatch } from 'react-redux';
+import { set } from './slice';
+import React from 'react';
 
-export function ThemeChanger() {
-  //return <input type="checkbox" className={styles.switcher} />;
+export const ThemeChanger = () => {
+  const theme = useSelector((state: any) => state.theme);
+  const dispatch = useDispatch();
+
+  React.useEffect(() => {
+    document.documentElement.dataset.theme = theme;
+    localStorage.setItem('theme', theme);
+  }, [theme]);
+
+  const handleChange = () => {
+    const next = theme === 'dark' ? 'light' : 'dark';
+    dispatch(set(next));
+  };
+
   return (
-    <div className={styles.switcher}>
+    <div className={styles.switcher} onClick={handleChange}>
       <div className={styles.circle}>
         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clipPath="url(#clip0_2147_4206)">
@@ -21,4 +36,4 @@ export function ThemeChanger() {
       </div>
     </div>
   );
-}
+};

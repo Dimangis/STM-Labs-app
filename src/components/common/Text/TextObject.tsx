@@ -5,7 +5,7 @@ const LinkProps: TextProps = {
   lineHeight: '24px',
   fontSize: '16px',
   bold: '400',
-  color: '#3B3C4A',
+  color: 'var(--secondary-text-color)',
   content: undefined,
 };
 
@@ -16,7 +16,7 @@ const HeaderProps: TextProps = {
   align: 'left',
   margin: '0',
   padding: '0',
-  color: '#181A2A',
+  color: 'var(--main-text-color)',
   content: undefined,
 };
 const HeaderText: React.FC<{ content: React.ReactNode; fontSize: string; lineHeight: string; margin?: string }> = ({

@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Aside.modules.css';
+import { useSelector } from 'react-redux';
 
 interface AsideProps {
   title?: string;
@@ -9,12 +10,14 @@ interface AsideProps {
 }
 
 const Aside: React.FC<AsideProps> = ({ title, text1, text2, marginTop }) => {
+  const theme = useSelector((state: any) => state.theme);
+  console.log(theme);
   const hasContent = title || text1 || text2;
   const asideContainer = {
     marginTop: marginTop || '120px', // Используем значение из пропс или значение по умолчанию
   };
   return (
-    <div className={styles.asideContainer} style={asideContainer}>
+    <div className={`${styles.asideContainer}`} style={asideContainer}>
       {hasContent ? (
         <>
           {title && <h4 className={`${styles.text} ${styles.h4}`}>{title}</h4>}

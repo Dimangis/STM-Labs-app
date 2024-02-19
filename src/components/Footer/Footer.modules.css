@@ -1,28 +1,9 @@
-@font-face {
-  font-family: 'WorkSans';
-  src: url('../../../public/fonts/WorkSans-Regular.woff2') format('woff2'),
-    url('../../../public/fonts/WorkSans-Regular.woff') format('woff'),
-    url('../../../public/fonts/WorkSans-Regular.ttf') format('ttf');
-  font-display: swap;
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'WorkSans';
-  src: url('../../../public/fonts/WorkSans-SemiBold.woff2') format('woff2'),
-    url('../../../public/fonts/WorkSans-SemiBold.woff') format('woff'),
-    url('../../../public/fonts/WorkSans-SemiBold.ttf') format('ttf');
-  font-display: swap;
-  font-weight: 600;
-  font-style: normal;
-}
-
 .footerContainer {
-    background-color: #F6F6F7; 
     margin-top: 80px;
     padding: 20px;
     height: 400px;
+    background-color: var(--background-secondary-color);
+    transition: background-color var(--change-theme-duration);
   }
   
   .footerContent {
@@ -35,7 +16,7 @@
     display: flex;    
     padding-bottom: 45px;
     justify-content: space-between;
-    border-bottom: 2px solid #E8E8EA;
+    border-bottom: 2px solid var(--border-color-primary);
   }
   
   .title{

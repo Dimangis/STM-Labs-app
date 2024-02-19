@@ -1,29 +1,9 @@
-@font-face {
-  font-family: 'WorkSans';
-  src: url('../../../../../public/fonts/WorkSans-SemiBold.woff2') format('woff2'),
-    url('../../../../../public/fonts/WorkSans-SemiBold.woff') format('woff'),
-    url('../../../../../public/fonts/WorkSans-SemiBold.ttf') format('ttf');
-  font-display: swap;
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'WorkSans';
-  src: url('../../../../../public/fonts/WorkSans-Medium.woff2') format('woff2'),
-    url('../../../../../public/fonts/WorkSans-Medium.woff') format('woff'),
-    url('../../../../../public/fonts/WorkSans-Medium.ttf') format('ttf');
-  font-display: swap;
-  font-weight: 500;
-  font-style: normal;
-}
-
 .postItem {
-    background-color: #FFFFFF;
+    background-color: var(--background-main-color);
     padding: 16px;
     border-radius: 12px;
     border: 1px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--box-shadow-primary);
   }
   
   .postImage {
