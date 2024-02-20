@@ -20,6 +20,9 @@ a{
 :root{
     --background-main-color:white;
     --background-secondary-color:#F6F6F7;
+    --background-toggle-color: #E8E8EA;
+    --logo-fill-color: #141624;
+    --align-toggle-item: left;
     --main-text-color: #181A2A;
     --secondary-text-color: #696A75;
     --border-color-primary:#E8E8EA;
@@ -30,6 +33,9 @@ a{
 [data-theme="dark"]{
     --background-main-color:#181A2A;
     --background-secondary-color:#141624;
+    --background-toggle-color: #4B6BFB;
+    --logo-fill-color: #4B6BFB;
+    --align-toggle-item: right;
     --main-text-color: #FFFFFF;
     --secondary-text-color: #97989F;
     --border-color-primary:#242535;

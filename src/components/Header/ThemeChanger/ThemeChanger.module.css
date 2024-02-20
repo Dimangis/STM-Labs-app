@@ -2,11 +2,12 @@
     display: flex;
     align-items: center;
     margin-left: 30px;
-    background-color: #E8E8EA;
     border-radius: 100px;
     border: 0px;
     width: 48px;
     height: 28px;
+    background-color: var(--background-toggle-color);
+    justify-content: var(--align-toggle-item);
 }
 
 .circle{
@@ -15,12 +16,24 @@
     justify-content: center;
     width: 24px;
     height: 24px;
-    margin-left: 2px;
-    background-color: white;
+    margin: 0 2px;
+    background-color: var(--background-main-color);
     border-radius: 100px;
     border: 0px;
 }
 
 .circle:hover{
     cursor: pointer;
+}
+
+.switcher.on{
+justify-content: right;
+height: 100px;
+background-color: yellow;
+}  
+
+.switcher.off{
+  justify-content: left;
+height: 100px;
+background-color: red;
 }

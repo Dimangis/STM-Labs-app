@@ -3,3 +3,12 @@
     flex-direction: row;
     align-items: center;
 }
+
+.Meta{
+    color: var(--main-text-color);
+    transition: var(--change-theme-duration);
+  }
+
+.Blog{
+    color: #4B6BFB;
+}
