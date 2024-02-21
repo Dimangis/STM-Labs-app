@@ -1,16 +1,21 @@
-.titleBlock {
+.titleBlockMain {
   position: absolute;
   left: 5%;
   top: 55%;
     max-width: 600px;
     border-radius: 12px;
     padding: 20px;
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
     background-color: var(--background-main-color);   
     box-shadow: var(--box-shadow-primary);
     transition: var(--change-theme-duration);
   }
   
+  .titleBlockSecondary {
+    position: absolute;
+    top: 55%;
+    max-width: 770px;
+    }
+
 .blockContent{
   margin: 20px 30px;
 }

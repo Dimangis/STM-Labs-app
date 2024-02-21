@@ -19,12 +19,15 @@ const HeaderProps: TextProps = {
   color: 'var(--main-text-color)',
   content: undefined,
 };
-const HeaderText: React.FC<{ content: React.ReactNode; fontSize: string; lineHeight: string; margin?: string }> = ({
-  content,
-  fontSize,
-  lineHeight,
-  margin,
-}) => <Text {...HeaderProps} content={content} fontSize={fontSize} lineHeight={lineHeight} margin={margin} />;
+const HeaderText: React.FC<{
+  content: React.ReactNode;
+  fontSize: string;
+  lineHeight: string;
+  margin?: string;
+  color?: string;
+}> = ({ content, fontSize, lineHeight, margin, color = 'var(--main-text-color)' }) => (
+  <Text {...HeaderProps} content={content} fontSize={fontSize} lineHeight={lineHeight} margin={margin} color={color} />
+);
 
 const BaseProps: TextProps = {
   bold: '400',

@@ -27,6 +27,7 @@
     border-radius: 6px;
     border-color: #696A754D;
     background-color: var(--background-main-color);
+    transition: var(--change-theme-duration);
     color: #696A75;
   }
 

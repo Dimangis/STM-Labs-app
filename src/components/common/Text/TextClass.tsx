@@ -11,6 +11,7 @@ export interface TextProps {
   margin?: string;
   padding?: string;
   color?: string;
+  transition?: string;
   theme?: 'light' | 'dark'; // Добавляем проп для указания темы
 }
 
@@ -26,6 +27,7 @@ export class Text extends React.Component<TextProps> {
       padding = '0',
       color = 'inherit',
       theme = 'light', // По умолчанию используется светлая тема
+      transition = 'var(--change-theme-duration)',
     } = this.props;
 
     const textStyle: CSSProperties = {
@@ -36,6 +38,7 @@ export class Text extends React.Component<TextProps> {
       margin,
       padding,
       color,
+      transition,
     };
 
     return (

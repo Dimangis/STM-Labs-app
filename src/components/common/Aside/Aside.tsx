@@ -10,8 +10,6 @@ interface AsideProps {
 }
 
 const Aside: React.FC<AsideProps> = ({ title, text1, text2, marginTop }) => {
-  const theme = useSelector((state: any) => state.theme);
-  console.log(theme);
   const hasContent = title || text1 || text2;
   const asideContainer = {
     marginTop: marginTop || '120px', // Используем значение из пропс или значение по умолчанию
