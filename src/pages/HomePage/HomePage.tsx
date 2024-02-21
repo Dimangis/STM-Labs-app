@@ -9,14 +9,10 @@ import Footer from 'components/Footer/Footer';
 export function HomePage() {
   return (
     <>
-      <PageContainer>
-        <Header />
-        <Hero />
-        <Aside />
-        <PostsList postsData={postsDataArray} />
-        <Aside marginTop="60px" />
-      </PageContainer>
-      <Footer />
+      <Hero />
+      <Aside />
+      <PostsList postsData={postsDataArray} />
+      <Aside marginTop="60px" />
     </>
   );
 }

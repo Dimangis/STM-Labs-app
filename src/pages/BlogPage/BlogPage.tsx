@@ -9,13 +9,9 @@ import PostsList from 'components/common/SectionPostsList/PostsList';
 export function BlogPage() {
   return (
     <>
-      <PageContainer>
-        <Header />
-        <Hero />
-        <PostsList postsData={postsDataArray} />
-        <Aside />
-      </PageContainer>
-      <Footer />
+      <Hero />
+      <PostsList postsData={postsDataArray} />
+      <Aside />
     </>
   );
 }

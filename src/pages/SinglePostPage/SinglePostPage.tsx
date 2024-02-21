@@ -7,11 +7,7 @@ import Footer from 'components/Footer/Footer';
 export function SinglePostPage() {
   return (
     <>
-      <PageContainer>
-        <Header />
-        <PostsList postsData={postsDataArray} />
-      </PageContainer>
-      <Footer />
+      <PostsList postsData={postsDataArray} />
     </>
 
     // <div className={styles.test}>

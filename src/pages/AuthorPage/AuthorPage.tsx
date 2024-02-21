@@ -8,13 +8,9 @@ import Footer from 'components/Footer/Footer';
 export function AuthorPage() {
   return (
     <>
-      <PageContainer>
-        <Header />
-        <Aside marginTop="60px" />
-        <PostsList postsData={postsDataArray} />
-        <Aside marginTop="60px" />
-      </PageContainer>
-      <Footer />
+      <Aside marginTop="60px" />
+      <PostsList postsData={postsDataArray} />
+      <Aside marginTop="60px" />
     </>
   );
 }
