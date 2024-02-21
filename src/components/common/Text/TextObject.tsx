@@ -34,12 +34,17 @@ const BaseProps: TextProps = {
   align: 'left',
   margin: '0',
   padding: '0',
-  color: 'red',
+  color: 'var(--base-text-color)',
   content: undefined,
+  maxWidth: '',
 };
-const BaseText: React.FC<{ content: React.ReactNode; fontSize: string; lineHeight: string; margin?: string }> = ({
-  content,
-}) => <Text {...BaseProps} content={content} />;
+const BaseText: React.FC<{
+  content: React.ReactNode;
+  fontSize: string;
+  lineHeight: string;
+  margin?: string;
+  maxWidth?: string;
+}> = ({ content }) => <Text {...BaseProps} content={content} />;
 
 export { LinkText, HeaderText, BaseText };
 

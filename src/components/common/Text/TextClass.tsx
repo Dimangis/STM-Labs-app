@@ -12,6 +12,7 @@ export interface TextProps {
   padding?: string;
   color?: string;
   transition?: string;
+  maxWidth?: string;
   theme?: 'light' | 'dark'; // Добавляем проп для указания темы
 }
 
@@ -28,6 +29,7 @@ export class Text extends React.Component<TextProps> {
       color = 'inherit',
       theme = 'light', // По умолчанию используется светлая тема
       transition = 'var(--change-theme-duration)',
+      maxWidth,
     } = this.props;
 
     const textStyle: CSSProperties = {
@@ -39,6 +41,7 @@ export class Text extends React.Component<TextProps> {
       padding,
       color,
       transition,
+      maxWidth,
     };
 
     return (

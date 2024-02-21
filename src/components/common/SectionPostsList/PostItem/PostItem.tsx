@@ -3,7 +3,6 @@ import styles from './PostItem.module.css';
 import PictureComponent from 'components/common/PictureComponent/PictureComponent';
 import { PostData } from '../PostData';
 import UserInfo from 'components/common/UserInfo/UserInfo';
-import jpgPath from '../../../../../public/img/Avatars/JF.jpg';
 import { HeaderText } from 'components/common/Text/TextObject';
 
 interface PostItemProps {

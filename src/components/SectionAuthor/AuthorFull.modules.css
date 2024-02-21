@@ -1,0 +1,17 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    background-color: var(--background-secondary-color);
+    transition:var(--change-theme-duration);
+}
+
+.userContainer{
+    display: flex;
+    align-items: center;
+}
+
+.imgContainer{
+    width: 64px;
+}
