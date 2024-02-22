@@ -7,7 +7,7 @@ export interface TextProps {
   fontSize?: string;
   bold?: string;
   content: React.ReactNode;
-  align?: 'left' | 'center' | 'right' | 'justify';
+  align?: 'left' | 'center' | 'right' | 'justify' | undefined;
   margin?: string;
   padding?: string;
   color?: string;

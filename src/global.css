@@ -1,13 +1,16 @@
 html {
     height: 100%;
     background-color: var(--background-main-color);
-    transition: background-color var(--change-theme-duration);
+    transition: var(--change-theme-duration);
 }
 
 body {
     height: 100%;
 }
 
+ul{
+    list-style: none;
+}
 
 #app {
     height: 100%;

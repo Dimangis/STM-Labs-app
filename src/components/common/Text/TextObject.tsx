@@ -34,6 +34,7 @@ const BaseProps: TextProps = {
   align: 'left',
   margin: '0',
   padding: '0',
+  fontSize: '14',
   color: 'var(--base-text-color)',
   content: undefined,
   maxWidth: '',
@@ -42,9 +43,28 @@ const BaseText: React.FC<{
   content: React.ReactNode;
   fontSize: string;
   lineHeight: string;
+  align?: 'left' | 'center' | 'right' | 'justify' | undefined;
   margin?: string;
   maxWidth?: string;
-}> = ({ content }) => <Text {...BaseProps} content={content} />;
+  color?: string;
+}> = ({
+  content,
+  maxWidth = '300px',
+  align = 'left',
+  color = 'var(--base-text-color)',
+  fontSize = '14px',
+  lineHeight = '20px',
+}) => (
+  <Text
+    {...BaseProps}
+    content={content}
+    maxWidth={maxWidth}
+    align={align}
+    color={color}
+    fontSize={fontSize}
+    lineHeight={lineHeight}
+  />
+);
 
 export { LinkText, HeaderText, BaseText };
 
