@@ -2,6 +2,7 @@
   "name": "webpack-configuration",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://dimangis.github.io/React",
   "main": "index.js",
   "scripts": {
     "build": "webpack",
