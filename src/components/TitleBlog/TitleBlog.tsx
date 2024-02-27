@@ -1,5 +1,5 @@
 import { HeaderText, LinkText } from 'components/common/Text/TextObject';
-import { PATH_LIST } from 'constants/paths';
+import { PATH_LIST } from 'router/paths';
 import { NavLink } from 'react-router-dom';
 import styles from './TitleBlog.modules.css';
 

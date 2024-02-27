@@ -1,9 +1,9 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import { PATH_LIST } from 'constants/paths';
+import { PATH_LIST } from 'router/paths';
 import { HomePage, BlogPage, SinglePostPage, AuthorPage } from 'pages/index';
 import { Provider } from 'react-redux';
-import { store } from 'components/store/store';
+import { store } from 'store/store';
 import Layout from 'components/Layout/Layout';
 
 export function Router() {
