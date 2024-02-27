@@ -1,5 +1,5 @@
 export * from './Header';
-export * from './Logo';
+export * from '../common/Logo';
 export * from './NavBar';
 export * from './Searcher';
 export * from './ThemeChanger';

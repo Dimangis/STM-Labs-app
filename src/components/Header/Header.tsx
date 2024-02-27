@@ -1,6 +1,6 @@
 import { NavBar } from './NavBar/NavBar';
 import { Searcher } from './Searcher';
-import { Logo } from './Logo';
+import { Logo } from '../common/Logo';
 import styles from './Header.modules.css';
 import { ThemeChanger } from './ThemeChanger';
 
