@@ -11,30 +11,3 @@
     background-color: var(--background-secondary-color);
     transition: background-color var(--change-theme-duration);
   }
-  
-
-
-
-.text{
-    font-family: 'WorkSans';
-    font-weight: 400;
-    margin-top: 5px;
-    margin-bottom: 0px;
-    color: #696A75;
-}
-
-  .h4 {
-    line-height: 20px;
-    font-size: 14px;
-    font-weight: 600;
-  }
-
-  .t1{
-    line-height: 24px;
-    font-size: 20px;
-  }
-
-  .t2{
-    line-height: 26px;
-    font-size: 18px;
-  }

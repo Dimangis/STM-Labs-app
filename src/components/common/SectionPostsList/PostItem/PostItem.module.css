@@ -7,6 +7,11 @@
     transition: var(--change-theme-duration);
   }
   
+  .postItem:hover{
+   cursor: pointer;
+   scale: 1.02;
+  }
+
   .postImage {
     width: 100%;
     height: auto;
@@ -29,12 +34,4 @@
     font-size: 14px;
     font-weight: 500;
 margin: 0;
-    color: #4B6BFB;
-  }
-  
-  .postDescription {
-    font-family: 'WorkSans';
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 28px;
   }

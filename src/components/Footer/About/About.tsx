@@ -1,15 +1,17 @@
 import styles from './About.modules.css';
 import style from '../Footer.modules.css';
-import { HeaderText } from 'components/common/Text/TextObject';
+import Text from 'components/common/Text/Text';
 
 export default function About() {
   return (
     <div className={styles.aboutContainer}>
-      <HeaderText content="About" fontSize="18px" lineHeight="28px" />
-      <p className={`${style.text} ${style.textDecoration} ${styles.description}`}>
+      <Text element="h4" variant="h4">
+        About
+      </Text>
+      <Text variant="paragraph" element="p" textColor="secondary" padding="15px 0">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
         magna aliqua. Ut enim ad minim veniam
-      </p>
+      </Text>
       <div>
         <b className={styles.boldText}>Email: </b>
         <a href="mailto:info@jstemplate.net" className={style.text}>

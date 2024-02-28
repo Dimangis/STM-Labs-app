@@ -1,39 +1,53 @@
-import { HeaderText, LinkText } from 'components/common/Text/TextObject';
 import styles from '../Footer.modules.css';
+import Text from 'components/common/Text/Text';
 
 export default function Category() {
   return (
     <div>
-      <HeaderText content="Category" fontSize="18px" lineHeight="28px" />
+      <Text element="h4" variant="h4">
+        Category
+      </Text>
       <ul className={styles.list}>
         <li>
           <a href="">
-            <LinkText content="Lifestyle" />
+            <Text variant="paragraph" element="span" link={true}>
+              Lifestyle
+            </Text>
           </a>
         </li>
         <li>
           <a href="">
-            <LinkText content="Technology" />
+            <Text variant="paragraph" element="span" link={true}>
+              Technology
+            </Text>
           </a>
         </li>
         <li>
           <a href="">
-            <LinkText content="Travel" />
+            <Text variant="paragraph" element="span" link={true}>
+              Travel
+            </Text>
           </a>
         </li>
         <li>
           <a href="">
-            <LinkText content="Business" />
+            <Text variant="paragraph" element="span" link={true}>
+              Business
+            </Text>
           </a>
         </li>
         <li>
           <a href="">
-            <LinkText content="Economy" />
+            <Text variant="paragraph" element="span" link={true}>
+              Economy
+            </Text>
           </a>
         </li>
         <li>
           <a href="">
-            <LinkText content="Sports" />
+            <Text variant="paragraph" element="span" link={true}>
+              Sports
+            </Text>
           </a>
         </li>
       </ul>

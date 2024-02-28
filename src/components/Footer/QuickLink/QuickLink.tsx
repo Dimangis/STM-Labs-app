@@ -1,41 +1,54 @@
 import { Link } from 'react-router-dom';
 import styles from '../Footer.modules.css';
-import style from './QuickLink.modules.css';
-import { HeaderText, LinkText } from 'components/common/Text/TextObject';
+import Text from 'components/common/Text/Text';
 
 export default function QuickLink() {
   return (
     <div>
-      <HeaderText content="Quick Link" fontSize="18px" lineHeight="28px" />
+      <Text element="h4" variant="h4">
+        Quick Link
+      </Text>
       <ul className={styles.list}>
         <li>
-          <Link to="/" className={`${style.link}`}>
-            <LinkText content="Home" />
+          <Link to="/">
+            <Text variant="paragraph" element="span" link={true}>
+              Home
+            </Text>
           </Link>
         </li>
         <li>
-          <Link to="/blog" className={`${style.link}`}>
-            <LinkText content="About" />
+          <Link to="/blog">
+            <Text variant="paragraph" element="span" link={true}>
+              About
+            </Text>
           </Link>
         </li>
         <li>
-          <Link to="/singlepost" className={`${style.link}`}>
-            <LinkText content="Blog" />
+          <Link to="/singlepost">
+            <Text variant="paragraph" element="span" link={true}>
+              Blog
+            </Text>
           </Link>
         </li>
         <li>
-          <Link to="/" className={`${style.link}`}>
-            <LinkText content="Archived" />
+          <Link to="/">
+            <Text variant="paragraph" element="span" link={true}>
+              Archived
+            </Text>
           </Link>
         </li>
         <li>
-          <Link to="/author" className={`${style.link}`}>
-            <LinkText content="Author" />
+          <Link to="/author">
+            <Text variant="paragraph" element="span" link={true}>
+              Author
+            </Text>
           </Link>
         </li>
         <li>
-          <Link to="/" className={`${style.link}`}>
-            <LinkText content="Contact" />
+          <Link to="/">
+            <Text variant="paragraph" element="span" link={true}>
+              Contact
+            </Text>
           </Link>
         </li>
       </ul>

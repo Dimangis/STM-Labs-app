@@ -1,20 +1,27 @@
 import { Logo } from 'components/Header';
 import style from '../Footer.modules.css';
 import styles from './Bot.modules.css';
+import Text from 'components/common/Text/Text';
 
 export default function Bot() {
   return (
     <div className={styles.botContainer}>
       <Logo />
       <div className={styles.policyBlock}>
-        <a className={style.text} href="link/to/your/download/file" download>
-          Terms of Use
+        <a href="link/to/your/download/file" download>
+          <Text variant="paragraph" element="span" link={true}>
+            Terms of Use
+          </Text>
         </a>
-        <a className={style.text} href="link/to/your/download/file" download>
-          Privacy Policy
+        <a href="link/to/your/download/file" download>
+          <Text variant="paragraph" element="span" link={true}>
+            Privacy Policy
+          </Text>
         </a>
-        <a className={style.text} href="link/to/your/download/file" download>
-          Cookie Policy
+        <a href="link/to/your/download/file" download>
+          <Text variant="paragraph" element="span" link={true}>
+            Cookie Policy
+          </Text>
         </a>
       </div>
     </div>

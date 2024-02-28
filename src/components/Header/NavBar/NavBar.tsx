@@ -1,26 +1,36 @@
 import { NavLink } from 'react-router-dom';
 import styles from './NavBar.modules.css';
 import { PATH_LIST } from 'constants/index';
-import { LinkText } from 'components/common/Text/TextObject';
+import Text from 'components/common/Text/Text';
 
 export function NavBar() {
   return (
     <nav>
       <ul className={styles.list}>
         <NavLink to={PATH_LIST.ROOT}>
-          <LinkText content="Home" />
+          <Text variant="paragraph" element="span" link={true}>
+            Home
+          </Text>
         </NavLink>
         <NavLink to={PATH_LIST.BLOG}>
-          <LinkText content="Blog" />
+          <Text variant="paragraph" element="span" link={true}>
+            Blog
+          </Text>
         </NavLink>
         <NavLink to={PATH_LIST.POST}>
-          <LinkText content="Single Post" />
+          <Text variant="paragraph" element="span" link={true}>
+            Single Post
+          </Text>
         </NavLink>
         <NavLink to={PATH_LIST.AUTHOR}>
-          <LinkText content="Pages" />
+          <Text variant="paragraph" element="span" link={true}>
+            Pages
+          </Text>
         </NavLink>
         <NavLink to={PATH_LIST.ROOT}>
-          <LinkText content="Contact" />
+          <Text variant="paragraph" element="span" link={true}>
+            Contact
+          </Text>
         </NavLink>
       </ul>
     </nav>

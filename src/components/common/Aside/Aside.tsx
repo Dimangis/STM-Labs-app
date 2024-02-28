@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Aside.modules.css';
 import { useSelector } from 'react-redux';
+import Text from '../Text/Text';
 
 interface AsideProps {
   title?: string;
@@ -18,21 +19,33 @@ const Aside: React.FC<AsideProps> = ({ title, text1, text2, marginTop }) => {
     <div className={`${styles.asideContainer}`} style={asideContainer}>
       {hasContent ? (
         <>
-          {title && <h4 className={`${styles.text} ${styles.h4}`}>{title}</h4>}
-          {text1 && (
-            <p className={`${styles.text} ${styles.t1}`}>
-              <b>{text1}</b>
-            </p>
+          {title && (
+            <Text variant="h6" element="h6">
+              {title}
+            </Text>
           )}
-          {text2 && <p className={`${styles.text} ${styles.t2}`}>{text2}</p>}
+          {text1 && (
+            <Text variant="paragraph" element="p">
+              <b>{text1}</b>
+            </Text>
+          )}
+          {text2 && (
+            <Text variant="paragraph" element="span">
+              {text2}
+            </Text>
+          )}
         </>
       ) : (
         <>
-          <h4 className={`${styles.text} ${styles.h4}`}>Advertisement</h4>
-          <p className={`${styles.text} ${styles.t1}`}>
+          <Text variant="h6" element="h6">
+            Advertisement
+          </Text>
+          <Text variant="paragraph" element="p">
             <b>You can place ads</b>
-          </p>
-          <p className={`${styles.text} ${styles.t2}`}>750x100</p>
+          </Text>
+          <Text variant="paragraph" element="span">
+            750x100
+          </Text>
         </>
       )}
     </div>

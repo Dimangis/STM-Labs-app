@@ -1,2 +1,1 @@
-// export * from './Text';
-export * from './TextClass';
+export * from './Text';

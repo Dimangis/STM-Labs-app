@@ -2,11 +2,11 @@ import PictureComponent from 'components/common/PictureComponent/PictureComponen
 import { PostData } from 'components/common/SectionPostsList/PostData';
 import styles from './AuthorFull.modules.css';
 import testImage from '../../../public/img/Avatars/JF.jpg';
-import { BaseText } from 'components/common/Text/TextObject';
 import FacebookIcon from '../../../public/img/SVG/Facebook.svg';
 import TwitterIcon from '../../../public/img/SVG/Twitter.svg';
 import InstagramIcon from '../../../public/img/SVG/Instagram.svg';
 import YouTubeIcon from '../../../public/img/SVG/YouTube.svg';
+import Text from 'components/common/Text/Text';
 
 interface AuthorProps {
   //Благодаря такому синтаксису я передаю точную часть интерфейса PostData, а точнее url
@@ -25,26 +25,15 @@ const AuthorFull = () => {
           <PictureComponent jpgPath1x={testImage} altText="Test" borderRadius="100px" />
         </div>
         <div>
-          <BaseText
-            content="Jonathan Doe"
-            fontSize="20px"
-            lineHeight="28px"
-            color="var( --main-text-color)"
-            align="center"
-          />
-          <BaseText content="Collaborator & Editor" fontSize="14px" lineHeight="20px" align="center" />
+          <Text>Jonathan Doe</Text>
+          <Text>Collaborator & Editor</Text>
         </div>
       </div>
-      <BaseText
-        content=" Meet Jonathan Doe, a passionate writer and blogger with a love for technology and travel. Jonathan holds a
+      <Text variant="paragraph" element="p">
+        Meet Jonathan Doe, a passionate writer and blogger with a love for technology and travel. Jonathan holds a
         degree in Computer Science and has spent years working in the tech industry, gaining a deep understanding of the
-        impact technology has on our lives."
-        fontSize="18px"
-        lineHeight="26px"
-        maxWidth="600px"
-        color="var(--secondary-text-color)"
-        align="center"
-      />
+        impact technology has on our lives.
+      </Text>
       <ul className={styles.socialLinkContainer}>
         <li className={styles.socialLink}>
           <a className={styles.aCorrect} href="http://" target="_blank" rel="noopener noreferrer">
