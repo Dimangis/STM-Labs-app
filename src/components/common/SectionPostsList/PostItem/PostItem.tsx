@@ -4,6 +4,7 @@ import PictureComponent from 'components/common/PictureComponent/PictureComponen
 import { PostData } from '../PostData';
 import UserInfo from 'components/common/UserInfo/UserInfo';
 import Text from 'components/common/Text/Text';
+import imgg from '../../../../../public/img/Posts/Rectangle 38Car@1x.jpg';
 
 interface PostItemProps {
   imageUrl: PostData['url']; //Благодаря такому синтаксису я передаю точную часть интерфейса PostData, а точнее url
@@ -16,6 +17,7 @@ interface PostItemProps {
 
 const PostItem: React.FC<PostItemProps> = ({ imageUrl, title, description, userInfo }) => {
   const { jpg1x, jpg2x, png1x, png2x } = imageUrl;
+  console.log(imageUrl);
   const { avatarSrc, userName, date } = userInfo;
   return (
     <div className={styles.postItem}>
