@@ -1,6 +1,7 @@
 .header{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -9,4 +10,21 @@
 .rightblock{
     display: flex;
     align-items: center;
+}
+
+@media(max-width:540px){
+    .header{
+        flex-direction: column;
+        justify-items: center;
+        flex-wrap: nowrap;
+        
+    }
+    .headerMobile{
+        width: 95%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
 }

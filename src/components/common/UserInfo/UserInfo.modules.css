@@ -7,7 +7,7 @@
 }
 
 .userInfoText{
-    font-family: WorkSans;
+    font-family: "WorkSans";
     color: #97989F;
     line-height: 24px;
 }
@@ -20,3 +20,14 @@
     font-weight: 400;
 }
 
+@media(max-width: 540px){
+    .userInfoContainer{
+        max-width: 70%;
+    }
+
+    .userInfoText{
+        font-size: 14px;
+    }
+
+
+}

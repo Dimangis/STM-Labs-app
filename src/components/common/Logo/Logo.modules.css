@@ -7,3 +7,10 @@
 .Blog{
     color: #4B6BFB;
 }
+
+/* @media(max-width:540px){
+    .container{
+        max-width: 125px;
+    }
+   
+} */

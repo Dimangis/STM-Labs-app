@@ -4,7 +4,7 @@ import Text from 'components/common/Text/Text';
 
 export default function QuickLink() {
   return (
-    <div>
+    <div className={styles.quickBlock}>
       <Text element="h4" variant="h4">
         Quick Link
       </Text>

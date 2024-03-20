@@ -3,7 +3,7 @@ import Text from 'components/common/Text/Text';
 
 export default function Category() {
   return (
-    <div>
+    <div className={styles.categoryBlock}>
       <Text element="h4" variant="h4">
         Category
       </Text>

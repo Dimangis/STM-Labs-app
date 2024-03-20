@@ -30,7 +30,9 @@ const PostItem: React.FC<PostItemProps> = ({ imageUrl, title, description, userI
       <Text variant="header" element="h3">
         {description}
       </Text>
-      <UserInfo avatarSrc={avatarSrc} userName={userName} date={date} />
+      <div className={styles.userContainer}>
+        <UserInfo avatarSrc={avatarSrc} userName={userName} date={date} />
+      </div>
     </div>
   );
 };

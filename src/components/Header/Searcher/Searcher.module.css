@@ -15,3 +15,10 @@
     outline: 1px solid #007BFF; /* Убирает обводку по умолчанию в некоторых браузерах */
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
 }
+
+@media(max-width:540px){
+    .input{
+        width:85%;
+        padding-right: 5px;
+    }
+}

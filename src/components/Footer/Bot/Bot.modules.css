@@ -11,3 +11,15 @@
 .policyBlock a:nth-last-child(n+2) {
     margin-right: 20px;
   }
+
+  @media(max-width:540px){
+    .policyBlock a{
+        font-size: 14px;
+        display: none;
+    }
+    .botContainer{
+        display: flex;
+        justify-content: center;
+
+    }
+  }

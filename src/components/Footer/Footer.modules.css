@@ -39,8 +39,6 @@
       color: #696A75;
     }
 
-
-
     .list{
       list-style-type: none;
       padding: 0;
@@ -53,4 +51,30 @@
   
     .list li:nth-last-child(n+2) {
       margin-bottom: 10px;
+    }
+
+    @media(max-width:540px){
+      .footerContainer{
+        height: auto;
+      }
+
+      .footerTopContent{
+        flex-direction: column;
+        padding-bottom: 15px;
+        border: none;
+      }
+        
+      .categoryBlock{
+        display: none;
+      }
+
+      .quickBlock{
+        display: none;
+      }
+
+      .footerBotContent{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
     }

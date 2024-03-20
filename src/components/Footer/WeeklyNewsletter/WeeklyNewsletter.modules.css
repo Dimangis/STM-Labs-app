@@ -49,5 +49,14 @@
   .subscribeButton:hover {
     background-color: #0056b3; 
   }
-
+@media(max-width:540px){
+  .newsletterForm{
+    padding: 15px;
+    min-width: auto;
+    margin: auto;
+  }
+  .emailInput{
+    margin: 15px 0;
+  }
+}
   

@@ -33,5 +33,11 @@
     line-height: 20px;
     font-size: 14px;
     font-weight: 500;
-margin: 0;
+    margin: 0;
+  }
+
+  @media(max-width:540px){
+    .userContainer{
+      max-width: 80%;
+    }
   }
