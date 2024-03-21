@@ -17,7 +17,6 @@ interface PostItemProps {
 
 const PostItem: React.FC<PostItemProps> = ({ imageUrl, title, description, userInfo }) => {
   const { jpg1x, jpg2x, png1x, png2x } = imageUrl;
-  console.log(imageUrl);
   const { avatarSrc, userName, date } = userInfo;
   return (
     <div className={styles.postItem}>

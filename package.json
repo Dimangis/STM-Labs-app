@@ -5,8 +5,7 @@
   "homepage": "https://dimangis.github.io/React",
   "main": "index.js",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "npm run build && gh-pages -d build",
     "build": "webpack",
     "start": "webpack serve --env MODE=development PORT=3000"
   },
