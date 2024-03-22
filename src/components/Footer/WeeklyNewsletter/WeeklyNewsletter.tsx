@@ -9,6 +9,7 @@ const WeeklyNewsletter: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     post('/Emails', email);
+    alert('Данные успешно отправлены.');
   };
 
   return (
