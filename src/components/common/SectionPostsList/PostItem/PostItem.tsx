@@ -4,7 +4,6 @@ import PictureComponent from 'components/common/PictureComponent/PictureComponen
 import { PostData } from '../PostData';
 import UserInfo from 'components/common/UserInfo/UserInfo';
 import Text from 'components/common/Text/Text';
-import imgg from '../../../../../public/img/Posts/Rectangle 38Car@1x.jpg';
 
 interface PostItemProps {
   imageUrl: PostData['url']; //Благодаря такому синтаксису я передаю точную часть интерфейса PostData, а точнее url

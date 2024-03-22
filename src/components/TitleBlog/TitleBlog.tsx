@@ -1,5 +1,5 @@
 import { PATH_LIST } from 'router/paths';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import styles from './TitleBlog.modules.css';
 import Text from 'components/common/Text/Text';
 
@@ -16,11 +16,11 @@ const TitleBlog = () => {
           </Text>
         </NavLink>
         <div className={styles.stick}></div>
-        <NavLink to={PATH_LIST.ROOT}>
+        <Link to={PATH_LIST.ROOT}>
           <Text variant="paragraph" element="span" link={true} textColor="secondary">
             Link One
           </Text>
-        </NavLink>
+        </Link>
       </div>
     </div>
   );

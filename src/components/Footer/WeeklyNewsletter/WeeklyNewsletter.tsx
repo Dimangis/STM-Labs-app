@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './WeeklyNewsletter.modules.css';
 import Text from 'components/common/Text/Text';
+import { post } from 'services/transpot';
 
 const WeeklyNewsletter: React.FC = () => {
+  const [email, setEmail] = useState('');
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Добавьте обработчик подписки по вашему усмотрению
+    post('/Emails', email);
   };
 
   return (
@@ -16,7 +19,13 @@ const WeeklyNewsletter: React.FC = () => {
       <Text variant="paragraph" element="span">
         Get blog articles and offers via email
       </Text>
-      <input type="email" placeholder="Your Email" className={styles.emailInput} required />
+      <input
+        type="email"
+        placeholder="Your Email"
+        className={styles.emailInput}
+        onChange={event => setEmail(event.target.value)}
+        required
+      />
       <button type="submit" className={styles.subscribeButton}>
         Subscribe
       </button>

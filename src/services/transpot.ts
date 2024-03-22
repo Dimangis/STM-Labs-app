@@ -6,3 +6,4 @@ export const baseTransport = axios.create({
 });
 
 export const get = baseTransport.get;
+export const post = baseTransport.post;
