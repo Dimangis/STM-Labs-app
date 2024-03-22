@@ -25,6 +25,7 @@ const WeeklyNewsletter: React.FC = () => {
         placeholder="Your Email"
         className={styles.emailInput}
         onChange={event => setEmail(event.target.value)}
+        // style={{color: var(--main-text-color)}}
         required
       />
       <button type="submit" className={styles.subscribeButton}>
