@@ -2,8 +2,8 @@ node_modules
 .idea
 build
 
-/public/img/Avatars
-/public/img/Posts
+/public/img/Avatars/
+/public/img/Posts/
 
 # Local Netlify folder
 .netlify
