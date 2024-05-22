@@ -1,21 +1,26 @@
 import { useEffect, useState } from 'react';
 import { get } from 'services/transpot';
 
-export const useFetch = (url: string, params?: string) => {
-  const [state, setState] = useState({});
+type FetchResponse<T> = {
+  results: T;
+} | null;
+
+export const useFetch = <T>(url: string, params?: string): FetchResponse<T> => {
+  const [state, setState] = useState<FetchResponse<T>>(null);
 
   useEffect(() => {
+    const getUrl = url + (params || '');
     (async () => {
       try {
-        const response = await get(url);
+        const response = await get(getUrl);
         const timeoutId = setTimeout(() => {
           setState(response.data);
-        }, 3000);
+        }, 500);
       } catch (error) {
         console.error('GETPOST', error);
       }
     })();
-  }, [url]);
+  }, [url, params]);
 
   return state;
 };

@@ -56,12 +56,20 @@
   color: #696A75;
 }
 
+.h5{
+  color: var(--logo-fill-color);
+}
+
 .white{
   color: white;
 }
 
 .blue{
   color: #4B6BFB;
+}
+
+.primary{
+  color: var(--main-text-color);
 }
 
 .secondary{

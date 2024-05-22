@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export const baseTransport = axios.create({
-  baseURL: 'https://b7cf57bfc748c4cc.mokky.dev',
+  baseURL: 'https://randomuser.me/',
   timeout: 3000,
 });
 
