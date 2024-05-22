@@ -12,7 +12,4 @@
 
 export enum PATH_LIST {
   ROOT = '/',
-  BLOG = 'blog',
-  POST = 'post',
-  AUTHOR = 'author',
 }
