@@ -44,6 +44,7 @@ const UserTable = ({ users }: UserTableProps) => {
                 jpgPath1x={user.picture.thumbnail}
                 altText={`${user.name.first} ${user.name.last}`}
                 borderRadius="100px"
+                tooltipImg={user.picture.large}
               />
             </td>
             <td>

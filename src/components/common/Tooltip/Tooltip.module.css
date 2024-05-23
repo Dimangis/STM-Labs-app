@@ -1,0 +1,13 @@
+.tooltip {
+    position: absolute;
+    z-index: 1000;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tooltipImage {
+    max-width: 200px; /* Adjust this value as needed */
+    max-height: 200px; /* Adjust this value as needed */
+  }

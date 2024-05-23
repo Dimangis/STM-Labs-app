@@ -9,6 +9,7 @@ import { debounce } from 'utils/debounce'; //Вообще debounce в materialui
 
 export function HomePage() {
   const data = useFetch<User>('api/', '?results=15');
+  console.log(data);
   const [filteredUsers, setFilteredUsers] = useState<User[]>([]);
   const { searchTerm } = useSearch();
 
