@@ -92,14 +92,8 @@ li{
   }
   
   .sHk7xzltHwD581IOeoko th {
-    background-color: #f2f2f2;
+    background-color: #F4F4F5;
     text-align: left;
-  }
-  
-  .sHk7xzltHwD581IOeoko img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
   }
   .jCxuBwlgdq97fmtwbtNO {
     font-family: 'WorkSans';
@@ -215,6 +209,19 @@ li{
 .XO425ltht4JaFueO_rDA {
     width: 100%;
     height: auto;
+  }
+.U4mbw_IbvXLHiHAwW4re {
+    position: absolute;
+    z-index: 1000;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .peENypWieb4tzKRl7pPt {
+    max-width: 200px; /* Adjust this value as needed */
+    max-height: 200px; /* Adjust this value as needed */
   }
 .OFjzSs8TACkweOucGeAJ{
     border-radius: 5px;   
