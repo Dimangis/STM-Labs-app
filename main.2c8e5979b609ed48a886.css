@@ -83,6 +83,7 @@ li{
 .sHk7xzltHwD581IOeoko {
     width: 100%;
     border-collapse: collapse;
+    margin: 40px 0;
   }
   
   .sHk7xzltHwD581IOeoko th, .sHk7xzltHwD581IOeoko td {
@@ -211,6 +212,10 @@ li{
     padding: 15px 0;
   }
 }
+.XO425ltht4JaFueO_rDA {
+    width: 100%;
+    height: auto;
+  }
 .OFjzSs8TACkweOucGeAJ{
     border-radius: 5px;   
     padding-left: 10px; 
@@ -322,10 +327,6 @@ height: 100px;
 background-color: red;
 }
 
-.XO425ltht4JaFueO_rDA {
-    width: 100%;
-    height: auto;
-  }
 .Xcecq8wSKQ1XU7qLNrKv {
   display: flex;
   flex-direction: column;
