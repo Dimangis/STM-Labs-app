@@ -1,8 +1,8 @@
-import React from 'react';
 import { User } from '../Interfaces/UserInterface';
 import { formatDate } from '../../../utils/formatDate';
 import styles from './UserTable.module.css';
 import Text from '../Text/Text';
+import PictureComponent from '../PictureComponent/PictureComponent';
 
 interface UserTableProps {
   users: User[];
@@ -40,7 +40,11 @@ const UserTable = ({ users }: UserTableProps) => {
               <Text variant="subheader" textColor="primary">{`${user.name.first} ${user.name.last}`}</Text>
             </td>
             <td>
-              <img src={user.picture.thumbnail} alt={`${user.name.first} ${user.name.last}`} />
+              <PictureComponent
+                jpgPath1x={user.picture.thumbnail}
+                altText={`${user.name.first} ${user.name.last}`}
+                borderRadius="100px"
+              />
             </td>
             <td>
               <Text variant="subheader" textColor="primary">{`${user.location.state}, ${user.location.city}`}</Text>

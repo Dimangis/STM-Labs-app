@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { get } from 'services/transpot';
 
 type FetchResponse<T> = {
-  results: T;
+  results: T[];
 } | null;
 
 export const useFetch = <T>(url: string, params?: string): FetchResponse<T> => {
